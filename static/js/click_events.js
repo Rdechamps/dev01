@@ -13,6 +13,9 @@ $(document).ready(function(e) {
         $(".header ul li a").removeClass('active');
         $(this).addClass('active');
 	});
+	
+	
+	
 });
 
 $(document).scroll(function(){

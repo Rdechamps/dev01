@@ -31,7 +31,11 @@
 	</div>
         
 	<div class="gallery sec-container col col-12" id="gallery-container">
-		<div class="pictures-container col col-7">
+    	<div class="gallery-txt col col-5 push-7 mobile-col-11-12 mobile-no-push">
+			<h1><strong><?php echo $content['gallery-title']; ?></strong></h1>
+			<p><?php echo $content['gallery-text']; ?></p>
+		</div>
+		<div class="pictures-container col col-7 pull-5 mobile-col-11-12 mobile-no-pull mobile-full">
         	<img src="static/img/temp.jpg" alt="" title="">
             <img src="static/img/temp.jpg" alt="" title="">
             <img src="static/img/temp.jpg" alt="" title="">
@@ -41,31 +45,27 @@
             <img src="static/img/temp.jpg" alt="" title="">
             <img src="static/img/temp.jpg" alt="" title="">
             <img src="static/img/temp.jpg" alt="" title="">
-            
         </div>
-		<div class="gallery-txt col col-5">
-			<h1><strong><?php echo $content['gallery-title']; ?></strong></h1>
-			<p><?php echo $content['gallery-text']; ?></p>
-		</div>
+		
 	</div>
         
 	<div class="business sec-container col col-12" id="business-container">
-		<div class="sellers col col-5">
+		<div class="sellers col col-5 mobile-col-11-12 mobile-full">
 			<h1><strong><?php echo $content['sellers-title']; ?></strong></h1>
-            <div class="map">
+            <div class="map mobile-full">
             	<iframe src="https://mapsengine.google.com/map/embed?mid=zVgZocOhbKcs.koZt-96vK6jo" width="640" height="640"></iframe>
             </div>
 		</div>
-		<div class="references col col-5">
+		<div class="references col col-5 mobile-col-11-12">
 		<h1><strong><?php echo $content['references-title']; ?></strong></h1>
-			<div class="partners">
+			<div class="partners mobile-full">
             
             </div>
 		</div>
 	</div>
 	<div class="contact sec-container col col-12" id="contact-container">
 		<h1><strong><?php echo $content['contact-title']; ?></strong></h1>
-        <form id="contact_form" class="col col-5 <?php echo $_SESSION['contacted']; ?>" method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>" enctype="multipart/form-data">
+        <form id="contact_form" class="col col-5 <?php echo $_SESSION['contacted']; ?> mobile-col-11-12" method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>" enctype="multipart/form-data">
         	<fieldset>
             	<input type="text" name="name" id="name" placeholder="<?php echo $content['form-ph-1']; ?>" required>
                 <input type="text" name="first_name" id="first_name" placeholder="<?php echo $content['form-ph-2']; ?>" required>
@@ -84,7 +84,7 @@
                 <input class="button" type="reset" value="RAFRAICHIR">
             </fieldset>
         </form>
-        <div class="contact_details col col-5">
+        <div class="contact_details col col-5 mobile-col-3-4">
         <?php echo $content['contact-details']; ?>
         </div>
 	</div>
@@ -103,8 +103,14 @@
         $(".toggle-container").css("left","0");
          $("body").css("overflow-y","hidden");
     });
-
 </script> 
+<script>
+	$(document).ready(function(e) {
+        $(".toggle-menu").on("click", function(e){
+			$(".header ul").css("left","0");
+		});
+    });
+</script>
 
 </body>
 </html>
