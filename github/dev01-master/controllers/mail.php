@@ -114,7 +114,6 @@
 		
 		//=====Envoi de l'e-mail.
 		mail($dest, $sujet, $message_html, $header);
-		$_SESSION['contacted'] = "sent";
 	}
 	else
 	{
