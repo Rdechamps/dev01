@@ -1,6 +1,17 @@
 <?php
 	$content = array();
 	
+	$content['menu-item-1'] = "About us";
+	
+	$content['menu-item-2'] = "Products";
+	
+	$content['menu-item-3'] = "Gallery";
+	
+	$content['menu-item-4'] = "Retailers";
+	
+	$content['menu-item-5'] = "Contact us";
+	
+	
 	$content['main-title'] = "La référence en CAO tôlerie";
 	$content['show-more'] = "Read more";
 	

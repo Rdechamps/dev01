@@ -1,203 +1,67 @@
-.button {
-  border: 0 none;
-  color: #fff;
-  position: inherit;
-  text-decoration: none;
-  background-color: #00aeef;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2) inset;
-  padding: 1em 3em !important; }
+.button { border: 0 none; color: #fff; position: inherit; text-decoration: none; background-color: #00aeef; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2) inset; padding: 1em 3em !important; }
 
-a {
-  color: #464648;
-  text-decoration: none; }
+a { color: #464648; text-decoration: none; }
 
-h1 {
-  display: block;
-  color: #00aeef;
-  margin: 0 0 30px 0;
-  text-align: left; }
+h1 { display: block; color: #00aeef; margin: 0 0 30px 0; text-align: left; }
 
-body {
-  width: 100%;
-  margin: auto;
-  overflow-x: hidden; }
+body { width: 100%; margin: auto; overflow-x: hidden; }
 
-.header {
-  height: auto;
-  position: fixed;
-  background: white;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.04);
-  z-index: 100; }
-  .header .toggle-menu {
-    display: none; }
-  .header ul li {
-    display: block;
-    margin: 0 8% 0 0;
-    float: left;
-    clear: right;
-    padding: 0 0 10px 0; }
-    .header ul li a {
-      display: block;
-      padding: 20px 0 10px 0;
-      border-bottom: 3px solid white;
-      transition: all 300ms ease-in-out; }
-    .header ul li .active {
-      border-bottom: 3px solid #00aeef; }
+.header { height: auto; position: fixed; background: white; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.04); z-index: 100; }
+.header .toggle-menu { display: none; }
+.header ul li { display: block; margin: 0 8% 0 0; float: left; clear: right; padding: 0 0 10px 0; }
+.header ul li a { display: block; padding: 20px 0 10px 0; border-bottom: 3px solid white; transition: all 300ms ease-in-out; }
+.header ul li .active { border-bottom: 3px solid #00aeef; }
 
-.logo {
-  position: fixed;
-  top: 20px;
-  z-index: 100; }
-  .logo img {
-    max-width: 150px;
-    width: 100%;
-    transition: all 300ms ease-in-out; }
-  .logo .scrolled {
-    max-width: 80px;
-    margin: -13px 0 0; }
+.logo { position: fixed; top: 20px; z-index: 100; }
+.logo img { max-width: 150px; width: 100%; transition: all 300ms ease-in-out; }
+.logo .scrolled { max-width: 80px; margin: -13px 0 0; }
 
-.main-container {
-  overflow: hidden;
-  float: left;
-  clear: right;
-  margin: 90px 0 0 0; }
-  .main-container .presentation, .main-container .product, .main-container .gallery, .main-container .business, .main-container .contact {
-    min-height: calc(100vh - 90px);
-    height: auto;
-    overflow: hidden; }
-  .main-container .presentation {
-    padding: 50px 0 0 0;
-    overflow: hidden;
-    background-color: #f4f4f4; }
-    .main-container .presentation .introduction, .main-container .presentation .product .product-presentation, .product .main-container .presentation .product-presentation {
-      text-align: justify; }
+.main-container { overflow: hidden; float: left; clear: right; margin: 90px 0 0 0; }
+.main-container .presentation, .main-container .product, .main-container .gallery, .main-container .business, .main-container .contact { min-height: calc(100vh - 90px); height: auto; overflow: hidden; }
+.main-container .presentation { padding: 50px 0 0 0; overflow: hidden; background-color: #f4f4f4; }
+.main-container .presentation .introduction, .main-container .presentation .product .product-presentation, .product .main-container .presentation .product-presentation { text-align: justify; }
 
-.product {
-  background-color: #464648;
-  padding: 50px 0 0 0; }
-  .product .product-presentation {
-    color: white;
-    padding-left: calc(100% / 12 * 1); }
+.product { background-color: #464648; padding: 50px 0 0 0; }
+.product .product-presentation { color: white; padding-left: calc(100% / 12 * 1); }
 
-.gallery {
-  overflow: hidden;
-  background-color: #ececec;
-  padding: 50px 0 0 0; }
-  .gallery .gallery-txt {
-    padding-right: calc(100% / 12 * 1); }
-  .gallery .pictures-container {
-    padding-left: calc(100% / 12 * 1);
-    overflow: hidden; }
-    .gallery .pictures-container img {
-      float: left;
-      clear: right;
-      width: 31%;
-      margin: 1%;
-      display: block; }
+.gallery { overflow: hidden; background-color: #ececec; padding: 50px 0 0 0; }
+.gallery .gallery-txt { padding-right: calc(100% / 12 * 1); }
+.gallery .pictures-container { padding-left: calc(100% / 12 * 1); overflow: hidden; }
+.gallery .pictures-container img { float: left; clear: right; width: 31%; margin: 1%; display: block; }
 
-.business {
-  padding: 50px 0 0 0;
-  background: white; }
-  .business .sellers, .business .references {
-    padding-left: calc(100% / 12 * 1); }
-    .business .sellers .map iframe, .business .references .map iframe {
-      width: 100% !important; }
+.business { padding: 50px 0 0 0; background: white; }
+.business .sellers, .business .references { padding-left: calc(100% / 12 * 1); }
+.business .sellers .map iframe, .business .references .map iframe { width: 100% !important; }
 
-.contact {
-  padding: 50px 0 0 0;
-  background-color: #464648;
-  padding-left: calc(100% / 12 * 1);
-  padding-right: calc(100% / 12 * 1);
-  color: white; }
-  .contact h2 {
-    color: white; }
-  .contact form fieldset input {
-    width: 85%;
-    margin: 0 15% 5% 0;
-    display: block; }
-  .contact form fieldset textarea {
-    display: block;
-    width: 85%;
-    height: 125px; }
+.contact { padding: 50px 0 0 0; background-color: #464648; padding-left: calc(100% / 12 * 1); padding-right: calc(100% / 12 * 1); color: white; }
+.contact h2 { color: white; }
+.contact form fieldset input { width: 85%; margin: 0 15% 5% 0; display: block; }
+.contact form fieldset textarea { display: block; width: 85%; height: 125px; }
 
-.toggle-container {
-  position: absolute;
-  height: calc(100vh - 90px);
-  top: 12%;
-  left: 100%;
-  background: #f4f4f4;
-  transition: all 500ms ease-in-out;
-  color: #464648;
-  width: 100%;
-  padding: 2em calc(100% / 12 * 1);
-  overflow-y: auto; }
-  .toggle-container .more-container .close-toggle {
-    float: right;
-    clear: left; }
-  .toggle-container .more-container .more-content {
-    padding: 30px 0 0 0; }
+.toggle-container { position: fixed; height: calc(100vh - 90px); top: 90px; left: 100%; background: #f4f4f4; transition: all 500ms ease-in-out; color: #464648; width: 100%; padding: 2em calc(100% / 12 * 1); overflow-y: auto; }
+.toggle-container .more-container .close-toggle { float: right; clear: left; }
+.toggle-container .more-container .more-content { padding: 30px 0 0 0; }
 
-@media only screen and (max-width: 739px) {
-  .toggle-mobile-menu {
-    left: 0; }
-
-  .header {
-    height: 60px !important;
-    background: #FFF;
-    padding: 0;
-    height: 60px !important; }
-    .header ul {
-      left: -100%;
-      display: block;
-      width: 60%;
-      background: #FFF;
-      /*margin : 60px 0 0 0!important;*/
-      padding: 0;
-      height: 100vh;
-      transition: linear 0.7s; }
-      .header ul li {
-        width: 100%;
-        padding: 0 0 0 10%; }
-
-  .logo {
-    top: 10px;
-    right: 10px;
-    width: auto; }
-    .logo img {
-      width: 60px !important; }
-
-  .main-container {
-    margin: 60px 0 0 0 !important; }
-    .main-container .presentation, .main-container .product, .main-container .gallery, .main-container .business, .main-container .contact {
-      margin: 0 !important;
-      height: auto !important;
-      min-height: inherit;
-      font-size: 0.9em;
-      padding: 20px 0 !important; }
-      .main-container .presentation h1, .main-container .product h1, .main-container .gallery h1, .main-container .business h1, .main-container .contact h1 {
-        font-size: 1.8em; }
-      .main-container .presentation .sellers, .main-container .product .sellers, .main-container .gallery .sellers, .main-container .business .sellers, .main-container .contact .sellers {
-        padding: 0; }
-        .main-container .presentation .sellers h1, .main-container .product .sellers h1, .main-container .gallery .sellers h1, .main-container .business .sellers h1, .main-container .contact .sellers h1 {
-          padding: 0 0 0 25px; }
-        .main-container .presentation .sellers .map iframe, .main-container .product .sellers .map iframe, .main-container .gallery .sellers .map iframe, .main-container .business .sellers .map iframe, .main-container .contact .sellers .map iframe {
-          height: 360px; }
-    .main-container .references {
-      padding: 0 0 0 10px; }
-    .main-container .contact h1 {
-      padding: 0 0 0 25px; }
-    .main-container .contact form fieldset input, .main-container .contact form fieldset textarea {
-      width: 100%;
-      margin: auto;
-      margin-bottom: 15px;
-      display: block; }
-    .main-container .contact .contact_details {
-      margin: 0 0 0 12.5%; }
-
-  .toggle-container {
-    display: block;
-    position: static;
-    height: auto;
-    padding: 0; } }
+@media only screen and (max-width: 739px) { .toggle-mobile-menu { left: 0 !important; }
+  .header { height: 60px !important; background: #FFF; padding: 0; height: 60px !important; }
+  .header .toggle-menu { display: block; }
+  .header .toggle-menu a { display: block; padding: 5px 10px; }
+  .header ul { left: -100%; display: block; width: 60%; background: #FFF; padding: 0; height: 100vh; transition: all 500ms ease-in-out; margin: 0; }
+  .header ul li { width: 100%; padding: 0 0 0 10%; }
+  .logo { top: 10px; right: 10px; width: auto; }
+  .logo img { width: 60px !important; }
+  .main-container { margin: 60px 0 0 0 !important; }
+  .main-container .presentation, .main-container .product, .main-container .gallery, .main-container .business, .main-container .contact { margin: 0 !important; height: auto !important; min-height: inherit; font-size: 0.9em; padding: 20px 0 !important; }
+  .main-container .presentation h1, .main-container .product h1, .main-container .gallery h1, .main-container .business h1, .main-container .contact h1 { font-size: 1.8em; }
+  .main-container .presentation .sellers, .main-container .product .sellers, .main-container .gallery .sellers, .main-container .business .sellers, .main-container .contact .sellers { padding: 0; }
+  .main-container .presentation .sellers h1, .main-container .product .sellers h1, .main-container .gallery .sellers h1, .main-container .business .sellers h1, .main-container .contact .sellers h1 { padding: 0 0 0 25px; }
+  .main-container .presentation .sellers .map iframe, .main-container .product .sellers .map iframe, .main-container .gallery .sellers .map iframe, .main-container .business .sellers .map iframe, .main-container .contact .sellers .map iframe { height: 360px; }
+  .main-container .product-presentation { padding-left: 10px; }
+  .main-container .references { padding: 0 0 0 10px; }
+  .main-container .contact h1 { padding: 0 0 0 25px; }
+  .main-container .contact form fieldset input, .main-container .contact form fieldset textarea { width: 100%; margin: auto; margin-bottom: 15px; display: block; }
+  .main-container .contact .contact_details { margin: 0 0 0 12.5%; }
+  .toggle-container { top: 60px; left: -100%; height: 100vh; overflow: auto; }
+  .toggle-container .more-container p { display: block; width: 100% !important; } }
 
 /*# sourceMappingURL=custom.css.map */

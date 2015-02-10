@@ -1,13 +1,12 @@
 <?php
 	require_once("header.php");
-	include("static/lang/".$_SESSION['lang']."/lang-".$_SESSION['lang'].".php");
 ?>
 
 <div class="main-container col-12 mobile-full">
     
 	<div class="presentation sec-container col col-12" id="presentation-container">
-		<img class="pres-img col col-6 no-mobile" src="" alt="Photo test" title="">
-		<div class="introduction col col-4 mobile-col-11-12">
+		<img class="pres-img col col-6 tablet-col-5 no-mobile" src="" alt="Photo test" title="">
+		<div class="introduction col col-4 tablet-col-1-2 mobile-col-11-12">
 			<h1><strong><?php echo $content['main-title']; ?></strong></h1>
 			<p><?php echo $content['intro-text-1']; ?></p>
                  <a id="more-catalCAD" class="button" href="#"><?php echo $content['show-more']; ?></a><br><br>
@@ -90,32 +89,40 @@
 	</div>
 </div>
 
-<div class="toggle-container">
-</div>
+<div class="toggle-container"></div>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="static/js/jquery.mobile.custom.min.js"></script>
 <script src="static/js/click_events.js"></script>
 <script src="static/js/sendMail.js"></script>
-<script>
-    $(".sec-container div a").bind("click", function(){
+<script type="application/javascript">
+    
 		if($(window).width()>1024)
 		{
-			var c = $(this).attr("id");
-			$(".toggle-container").load("views/<?php echo $_SESSION['lang']; ?>/"+c+".php .more-container");
-			$(".toggle-container").css("left","0");
-			$("body").css("overflow-y","hidden");
+			$(".sec-container div a").bind("click", function(){
+				var c = $(this).attr("id");
+				$(".toggle-container").load("views/<?php echo $_SESSION['lang']; ?>/"+c+".php .more-container", true);
+				$(".toggle-container").css("left","0");
+				$("html, body").css("overflow-y","hidden");
+			});
+			
 		}
 		else
 		{
-			var c = $(this).attr("id");
-			$(".toggle-container").load("views/<?php echo $_SESSION['lang']; ?>/"+c+".php .more-container");
+			$(".sec-container div a").bind("tap", function(){
+				var c = $(this).attr("id");
+				$(".toggle-container").load("views/<?php echo $_SESSION['lang']; ?>/"+c+".php .more-container", true);
+				$(".toggle-container").css("left","0");
+				$("html, body").css("overflow","hidden");
+			});
 		}
-    });
+		
+    
 </script> 
 <script>
 	$(document).ready(function(e) {
-        $(".toggle-menu").on("click", function(e){
-			$(".header ul").css("left","0");
+        $(".toggle-menu").bind("tap", function(e){
+			$(".menu-list").toggleClass("toggle-mobile-menu");
 		});
     });
 </script>

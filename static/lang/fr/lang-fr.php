@@ -2,6 +2,15 @@
 
 	$content = array();
 
+	$content['menu-item-1'] = "Qui sommes-nous ?";
+	
+	$content['menu-item-2'] = "Produits";
+	
+	$content['menu-item-3'] = "Galerie";
+	
+	$content['menu-item-4'] = "Revendeurs";
+	
+	$content['menu-item-5'] = "Nous contacter";
 	
 
 	$content['main-title'] = "La référence en CAO tôlerie";

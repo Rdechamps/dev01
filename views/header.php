@@ -18,19 +18,21 @@
 
 <body>
 
+<?php include("static/lang/".$_SESSION['lang']."/lang-".$_SESSION['lang'].".php"); ?>
+
 <div class="header col col-12 mobile-full">
-	<div style="padding : 10px" class="toggle-menu"><a href="#"><img width="40" src="static/img/burger.jpg"></a></div>
-    <ul class="col col-7 push-5 ">
+	<div  class="toggle-menu"><a href="#"><img width="40" height="40" src="static/img/burger.jpg"></a></div>
+    <ul class="menu-list col col-7 push-5 ">
 
-        <li><a id="presentation" href="#" class="active">Qui sommes-nous ?</a></li>
+        <li><a id="presentation" href="#" class="active"><?php echo $content['menu-item-1']; ?></a></li>
 
-        <li><a id="product" href="#">Produits</a></li>
+        <li><a id="product" href="#"><?php echo $content['menu-item-2']; ?></a></li>
 
-        <li><a id="gallery" href="#">Galerie</a></li>
+        <li><a id="gallery" href="#"><?php echo $content['menu-item-3']; ?></a></li>
 
-        <li><a id="business" href="#">Revendeurs</a></li>
+        <li><a id="business" href="#"><?php echo $content['menu-item-4']; ?></a></li>
 
-        <li><a id="contact" href="#">Nous contacter</a></li>
+        <li><a id="contact" href="#"><?php echo $content['menu-item-5']; ?></a></li>
         
          <div class="col col-1 push-4">
     
@@ -41,7 +43,7 @@
     	</div>
 
     </ul>
-    <div class="col col-1 push-4 no-mobile">
+    <div class="change-lang col col-1 push-4 no-mobile">
     
     	<a href="index.php?action=fr"><img title="French" alt="French" height="25" width="25" src="static/img/icons/France.png"></a>
         
