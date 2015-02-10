@@ -28,6 +28,8 @@ body {
   background: white;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.04);
   z-index: 100; }
+  .header .toggle-menu {
+    display: none; }
   .header ul li {
     display: block;
     margin: 0 8% 0 0;
@@ -120,17 +122,20 @@ body {
 
 .toggle-container {
   position: absolute;
-  height: 100%;
+  height: calc(100vh - 90px);
   top: 12%;
   left: 100%;
   background: #f4f4f4;
   transition: all 500ms ease-in-out;
   color: #464648;
   width: 100%;
-  padding-left: calc(100% / 12 * 1);
-  padding-right: calc(100% / 12 * 1); }
-  .toggle-container .more-container {
-    padding: 2em; }
+  padding: 2em calc(100% / 12 * 1);
+  overflow-y: auto; }
+  .toggle-container .more-container .close-toggle {
+    float: right;
+    clear: left; }
+  .toggle-container .more-container .more-content {
+    padding: 30px 0 0 0; }
 
 @media only screen and (max-width: 739px) {
   .toggle-mobile-menu {
@@ -190,6 +195,9 @@ body {
       margin: 0 0 0 12.5%; }
 
   .toggle-container {
-    display: none; } }
+    display: block;
+    position: static;
+    height: auto;
+    padding: 0; } }
 
 /*# sourceMappingURL=custom.css.map */

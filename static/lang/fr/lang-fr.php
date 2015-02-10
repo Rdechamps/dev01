@@ -19,7 +19,7 @@
 
 Basée à Grenoble, catalCAD propose également un service de formation et support technique de très haute qualité aux clients Français et de langue Française. Pour les autres pays, catalCAD diffuse SpaceClaimSMOPlus à travers un réseau de distributeurs et/ou intégrateurs agréés, tous professionnels de la Tôlerie et experts dans ce domaine.
 <br><br>
-	Notre volonté : Offrir à un niveau de prix très abordable la meilleure technologie CAO Tôlerie du marché répondant le plus complètement possible à la satisfaction des besoins de nos clients
+	Notre volonté : Offrir à un niveau de prix très abordable la meilleure technologie CAO Tôlerie du marché répondant le plus complètement possible à la satisfaction des besoins de nos clients.
 <br><br>
 	<span>CatalCAD est aussi consultant pour son expertise CAO tôlerie auprès d’autres éditeurs de CAO/FAO comme Mitsubishi, S.I. Engineering, Xitron, Missler Software, SpaceClaim, Bricsys.</span>";
 

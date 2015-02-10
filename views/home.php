@@ -98,10 +98,18 @@
 <script src="static/js/sendMail.js"></script>
 <script>
     $(".sec-container div a").bind("click", function(){
-        var c = $(this).attr("id");
-        $(".toggle-container").load("views/<?php echo $_SESSION['lang']; ?>/"+c+".php .more-container");
-        $(".toggle-container").css("left","0");
-         $("body").css("overflow-y","hidden");
+		if($(window).width()>1024)
+		{
+			var c = $(this).attr("id");
+			$(".toggle-container").load("views/<?php echo $_SESSION['lang']; ?>/"+c+".php .more-container");
+			$(".toggle-container").css("left","0");
+			$("body").css("overflow-y","hidden");
+		}
+		else
+		{
+			var c = $(this).attr("id");
+			$(".toggle-container").load("views/<?php echo $_SESSION['lang']; ?>/"+c+".php .more-container");
+		}
     });
 </script> 
 <script>

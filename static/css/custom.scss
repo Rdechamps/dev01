@@ -19,6 +19,10 @@ body{
     box-shadow:5px 5px 5px rgba(0,0,0,0.04);
 	z-index : 100;
 
+	.toggle-menu
+	{
+		display : none;	
+	}
 	 ul
 	 {
 	
@@ -182,20 +186,31 @@ img {
 .toggle-container
 {
 	position : absolute;
-    height:100%;
+    height:$section-height;
 	top : 12%;
 	left : 100%;
     background:#f4f4f4;
     transition:all 500ms ease-in-out;
     color:$secondary-color;
     width:100%;
-    padding-left:$padding-left;
-    padding-right:$padding-left;
+	padding : 2em $padding-left;
+	overflow-y : auto;
     
     .more-container {
-        padding: 2em;
+		
+		.close-toggle
+		{
+			float : right;
+			clear : left;
+		}
+		
+		.more-content
+		{
+			padding : 30px 0 0 0;
+		}
+		
     
-}
+	}
 }
 
 @media only screen and (max-width: 739px) {
@@ -310,7 +325,10 @@ img {
 	}
 	.toggle-container
 	{
-		display : none;	
+		display : block;
+		position : static;
+		height : auto;
+		padding : 0;
 	}
 
 }
