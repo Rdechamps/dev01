@@ -1,10 +1,15 @@
 // _ui.scss
 
-    .button {
-    background-color: $primary-color;
+    #button {
+    background-color:$blue-catalcad;
     border: 0 none;
     color: #fff;
     padding: 1em 3em;
     position: relative;
+    text-decoration: none;
+}
+
+a {
+    color:$secondary-color;
     text-decoration: none;
 }
