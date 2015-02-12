@@ -5,7 +5,18 @@
 <div class="main-container col-12 mobile-full">
     
 	<div class="presentation sec-container col col-12" id="presentation-container">
-		<img class="pres-img col col-6 tablet-col-5 no-mobile" src="" alt="Photo test" title="">
+		<div class="pres-img col col-6 tablet-col-5 no-mobile">
+            <div class="scene">
+                <img class="base" id="base" src="static/img/animation/base.png" />
+                <img class="front" id="front" src="static/img/animation/front.png" />
+                <img class="spot1" id="spot1" src="static/img/animation/spot1.png" />
+                <img class="spot2" id="spot2" src="static/img/animation/spot2.png" />
+                <img class="spot3" id="spot3" src="static/img/animation/spot3.png" />
+                <div class="trait1"></div>
+                <div class="trait2"></div>
+                <img class="pliage" src="static/img/animation/pliage.png" />
+            </div>
+        </div>
 		<div class="introduction col col-4 tablet-col-1-2 mobile-col-11-12">
 			<h1><strong><?php echo $content['main-title']; ?></strong></h1>
 			<p><?php echo $content['intro-text-1']; ?></p>
@@ -35,15 +46,16 @@
 			<p><?php echo $content['gallery-text']; ?></p>
 		</div>
 		<div class="pictures-container col col-7 pull-5 mobile-col-11-12 mobile-no-pull mobile-full">
-        	<img src="static/img/temp.jpg" alt="" title="">
-            <img src="static/img/temp.jpg" alt="" title="">
-            <img src="static/img/temp.jpg" alt="" title="">
-            <img src="static/img/temp.jpg" alt="" title="">
-            <img src="static/img/temp.jpg" alt="" title="">
-            <img src="static/img/temp.jpg" alt="" title="">
-            <img src="static/img/temp.jpg" alt="" title="">
-            <img src="static/img/temp.jpg" alt="" title="">
-            <img src="static/img/temp.jpg" alt="" title="">
+        	<img class="" src="static/img/temp.jpg" alt="" title="">
+            <img class="" src="static/img/temp.jpg" alt="" title="">
+            <img class="" src="static/img/temp.jpg" alt="" title="">
+            <img class="" src="static/img/temp.jpg" alt="" title="">
+            <img class="" src="static/img/temp.jpg" alt="" title="">
+            <img class="" src="static/img/temp.jpg" alt="" title="">
+            <img class="" src="static/img/temp.jpg" alt="" title="">
+            <img class="" src="static/img/temp.jpg" alt="" title="">
+            <img class="" src="static/img/temp.jpg" alt="" title="">
+          
         </div>
 		
 	</div>
@@ -126,6 +138,14 @@
 		});
     });
 </script>
+<script>
+$('.base, .front, .spot1, .spot2').delay(8000).queue(function(){
+    $(this).addClass('animation-reverse');
+});
+   $('.spot3').delay(9000).queue(function(){
+  $(this).addClass('animation-spot3');
+});
 
+</script> 
 </body>
 </html>

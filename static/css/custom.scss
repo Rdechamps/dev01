@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'ui';
+@import 'animation';
 $section-height:calc(100vh - 90px);
 $mobile-section-height:calc(100vh - 60px);
 $transition:all 300ms ease-in-out;
@@ -89,7 +90,9 @@ img {
         .introduction {
             text-align: justify;
         }
-		}
+        
+     
+  
 	}
 	.product
 	{
@@ -359,4 +362,5 @@ img {
 		}
 	}
 
+}
 }
