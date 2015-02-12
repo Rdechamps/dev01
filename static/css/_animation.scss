@@ -80,7 +80,7 @@ $anim-set : 1s ease 1 backwards;
     min-height: 1px;
 }
 .animation-spot3 {
-    @include animation(spot3-suite 1s ease forwards);
+    @include animation(spot3-suite 1s 1 ease normal forwards);
 }
 @include keyframes(base){
 from {
@@ -148,51 +148,52 @@ from {
  
 }
 
-.trait1 {
-  background: none repeat scroll #00aeef;
-  height: 1px;
-  left: 200px;
-  position: absolute;
-  top: -53px;
-  @include transform(rotate(4deg));
-   -webkit-transform-origin: left center 0;
-    -ms-transform-origin: left center 0;
-  transform-origin: left center 0;
-  width: 277px;
-  transition: all 300ms ease-in;
-@include animation(line 300ms 1 backwards);
-@include animation-delay(10s);
-}
-
-@include keyframes(line){
-from {
-     width:0px;
-    opacity:0;
-}
-    to {
-        width:277px;
-        opacity:1;
-    }
- 
-}
-
 .pliage {
   left: 400px;
   position: absolute;
   top: -100px;
   transform: scale(0.8);
-@include animation(pliage 300ms 1 backwards);
+@include animation(pliage 1s ease 1 backwards);
 @include animation-delay(11s);
 }
 
 @include keyframes(pliage){
 from {
      opacity:0;
-    @include transform(scale(0.5)); 
+    @include transform(scale(0.5) translate(0,-800px)); 
 }
     to {
        opacity:1;
-    @include transform(scale(0.8)); 
+    @include transform(scale(0.8) translate(0, 0)); 
+    }
+ 
+}
+
+.pliage.stay {
+@include animation(stay1 4s ease infinite alternate backwards);
+}
+
+@include keyframes(stay1){
+from {
+   @include transform(scale(0.8) translate(0, 0)); 
+}
+    to {
+     @include transform(scale(0.8) translate(0,-100px)); 
+    }
+ 
+    
+}
+.spot3.stay {
+@include animation(stay2 4s ease infinite alternate backwards);
+    @include animation-delay(4s);
+}
+
+@include keyframes(stay2){
+from {
+   @include transform(translate(-250px,-350px) rotate(90deg) scale(0.8));
+}
+    to {
+     @include transform(translate(-250px,-350px) rotate(90deg) scale(0.8) translate(100px,0));
     }
  
 }

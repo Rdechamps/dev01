@@ -7,14 +7,13 @@
 	<div class="presentation sec-container col col-12" id="presentation-container">
 		<div class="pres-img col col-6 tablet-col-5 no-mobile">
             <div class="scene">
+                <img class="pliage" src="static/img/animation/pliage.png" />
                 <img class="base" id="base" src="static/img/animation/base.png" />
                 <img class="front" id="front" src="static/img/animation/front.png" />
                 <img class="spot1" id="spot1" src="static/img/animation/spot1.png" />
                 <img class="spot2" id="spot2" src="static/img/animation/spot2.png" />
                 <img class="spot3" id="spot3" src="static/img/animation/spot3.png" />
-                <div class="trait1"></div>
-                <div class="trait2"></div>
-                <img class="pliage" src="static/img/animation/pliage.png" />
+                
             </div>
         </div>
 		<div class="introduction col col-4 tablet-col-1-2 mobile-col-11-12">
@@ -142,8 +141,20 @@
 $('.base, .front, .spot1, .spot2').delay(8000).queue(function(){
     $(this).addClass('animation-reverse');
 });
-   $('.spot3').delay(9000).queue(function(){
+
+    
+      $('.spot3').delay(9000).queue(function(){
+                       setTimeout(function() {
+      $('.spot3').addClass('stay');
+}, 5000);
   $(this).addClass('animation-spot3');
+ 
+        });
+  
+
+    
+      $('.pliage').delay(13000).queue(function(){
+  $(this).addClass('stay');
 });
 
 </script> 
