@@ -32,7 +32,7 @@ $anim-set : 1s ease 1 backwards;
 /*.scene{ @include animation(base 3s ease alternate infinite); }*/
 .common_anim {
  position:absolute;
-    transition:all 1s ease-in;
+       transition:opacity 1s ease-in;
 }
 
 .animation-reverse {

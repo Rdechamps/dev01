@@ -102,7 +102,7 @@ Fax : +33 (0)4 63 05 00 10";
 
 	
 
-	$content['more-catalCAD-text-1'] = "La société CatalCAD a été fondée en décembre 1995 par MM. Christian LECOMTE, précédemment ingénieur Industrialisation et Informatique  et Emmanuel Vendeville, précédemment ingénieur responsable des Achats centraux pour les matières premières et sous-traitance Mécanique et Tôlerie, tous deux chez Merlin Gérin Grenoble (Schneider Electric aujourd’hui).<br/>La motivation de création de CatalCAD était de mettre au point des systèmes informatiques (Logiciels) qui permettraient de raccourcir considérablement le cycle de mise en fabrication des pièces et ensembles en tôle entre la conception (CAO Bureaux d’études) et la mise en fabrication (FAO Bureaux des méthodes).";
+	$content['more-catalCAD-text-1'] = "<strong>La société CatalCAD a été fondée en décembre 1995 par MM. Christian LECOMTE, précédemment ingénieur Industrialisation et Informatique  et Emmanuel Vendeville, précédemment ingénieur responsable des Achats centraux pour les matières premières et sous-traitance Mécanique et Tôlerie, tous deux chez Merlin Gérin Grenoble (Schneider Electric aujourd’hui).</strong><br><br/>La motivation de création de CatalCAD était de mettre au point des systèmes informatiques (Logiciels) qui permettraient de raccourcir considérablement le cycle de mise en fabrication des pièces et ensembles en tôle entre la conception (CAO Bureaux d’études) et la mise en fabrication (FAO Bureaux des méthodes).";
 
 	
 
