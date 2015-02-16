@@ -32,7 +32,7 @@ $anim-set : 1s ease 1 backwards;
 /*.scene{ @include animation(base 3s ease alternate infinite); }*/
 .common_anim {
  position:absolute;
-    transition:all 1s ease-in;
+       transition:opacity 1s ease-in;
 }
 
 .animation-reverse {
@@ -79,9 +79,22 @@ $anim-set : 1s ease 1 backwards;
     left:100px;
     min-height: 1px;
 }
+
+.arrow {
+     @extend .common_anim;
+    top:60px;
+    left:250px;
+    @include animation(arrow 1s ease 1 both);
+    @include animation-delay(11s);
+
+}
+
 .animation-spot3 {
     @include animation(spot3-suite 1s 1 ease normal forwards);
 }
+
+
+
 @include keyframes(base){
 from {
     opacity:0;
@@ -169,6 +182,18 @@ from {
  
 }
 
+@include keyframes(arrow){
+from {
+    opacity:0;
+   
+}
+    to {
+        opacity:1!important;
+        @include transform(translate(80px,0));
+    }
+ 
+}
+
 .pliage.stay {
 @include animation(stay1 4s ease infinite alternate backwards);
 }
@@ -181,7 +206,6 @@ from {
      @include transform(scale(0.8) translate(0,-100px)); 
     }
  
-    
 }
 .spot3.stay {
 @include animation(stay2 4s ease infinite alternate backwards);

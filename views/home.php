@@ -6,13 +6,14 @@
     
 	<div class="presentation sec-container col col-12" id="presentation-container">
 		<div class="pres-img col col-6 tablet-col-5 no-mobile">
-            <div class="scene">
+           <div class="scene">
                 <img class="pliage" src="static/img/animation/pliage.png" />
                 <img class="base" id="base" src="static/img/animation/base.png" />
                 <img class="front" id="front" src="static/img/animation/front.png" />
                 <img class="spot1" id="spot1" src="static/img/animation/spot1.png" />
                 <img class="spot2" id="spot2" src="static/img/animation/spot2.png" />
                 <img class="spot3" id="spot3" src="static/img/animation/spot3.png" />
+               <img class="arrow" id="arrow" src="static/img/animation/arrow.png" />
                 
             </div>
         </div>
@@ -45,15 +46,16 @@
 			<p><?php echo $content['gallery-text']; ?></p>
 		</div>
 		<div class="pictures-container col col-7 pull-5 mobile-col-11-12 mobile-no-pull mobile-full">
-        	<img class="" src="static/img/temp.jpg" alt="" title="">
-            <img class="" src="static/img/temp.jpg" alt="" title="">
-            <img class="" src="static/img/temp.jpg" alt="" title="">
-            <img class="" src="static/img/temp.jpg" alt="" title="">
-            <img class="" src="static/img/temp.jpg" alt="" title="">
-            <img class="" src="static/img/temp.jpg" alt="" title="">
-            <img class="" src="static/img/temp.jpg" alt="" title="">
-            <img class="" src="static/img/temp.jpg" alt="" title="">
-            <img class="" src="static/img/temp.jpg" alt="" title="">
+        	 <img class="" src="static/img/gallery/vignettes/v_truck.jpg" alt="" title="">
+            <img class="" src="static/img/gallery/vignettes/v_mach-out.jpg" alt="" title="">
+            <img class="" src="static/img/gallery/vignettes/v_boitier.jpg" alt="" title="">
+            <img class="" src="static/img/gallery/vignettes/v_capture1.jpg" alt="" title="">
+            <img class="" src="static/img/gallery/vignettes/v_capture2.jpg" alt="" title="">
+            <img class="" src="static/img/gallery/vignettes/v_capture3.jpg" alt="" title="">
+<iframe width="30%"  src="https://www.youtube.com/embed/JH_cvYAtd4Q" frameborder="0" allowfullscreen></iframe>
+            <iframe width="30%"  src="https://www.youtube.com/embed/O7lVq_w5ZWY" frameborder="0" allowfullscreen></iframe>
+            <iframe width="30%"  src="https://www.youtube.com/embed/xvCwLdG6aio" frameborder="0" allowfullscreen></iframe>
+           
           
         </div>
 		
@@ -146,11 +148,12 @@ $('.base, .front, .spot1, .spot2').delay(8000).queue(function(){
       $('.spot3').delay(9000).queue(function(){
                        setTimeout(function() {
       $('.spot3').addClass('stay');
-}, 5000);
+}, 1000);
   $(this).addClass('animation-spot3');
  
         });
   
+
 
     
       $('.pliage').delay(13000).queue(function(){

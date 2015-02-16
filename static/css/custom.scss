@@ -6,6 +6,7 @@ $mobile-section-height:calc(100vh - 60px);
 $transition:all 300ms ease-in-out;
 $padding-left:calc(100% / 12 * 1);
 $padding-section:50px 0 0 0;
+$background-piece:url(../img/piece1.png) no-repeat right bottom #464648 fixed;
 
 body{
 	width:100%;
@@ -51,11 +52,11 @@ body{
 	}
  
 }
-    .logo  {
+    .logo
+    {
     position: fixed;
     top: 20px;
 	z-index : 100;
-
 
 img {
       max-width: 150px;
@@ -68,7 +69,8 @@ img {
 }
       }
 .main-container
-{overflow : hidden;
+{
+    overflow : hidden;
 	float : left;
 	clear : right;
     margin: 90px 0 0 0;
@@ -96,7 +98,7 @@ img {
 	}
 	.product
 	{
-		background-color:$secondary-color;
+		background:$background-piece;
 		padding:$padding-section;
 		
 		.product-presentation
@@ -112,7 +114,7 @@ img {
 		overflow : hidden;
 		background-color : #ececec;
         padding:$padding-section;
-		
+		background:url(../img/piece2.png) no-repeat right bottom #ececec fixed;
         .gallery-txt {
             padding-right:$padding-left;
         }
@@ -121,11 +123,11 @@ img {
 			padding-left: $padding-left;
 			overflow:hidden;
 			
-			img
+			img, iframe
 			{
 				float : left;
 				clear : right;
-				width : 31%;
+				width : 25%;
 				margin : 1%;
 				display : block;	
 			}
@@ -158,6 +160,9 @@ img {
 		padding-left:$padding-left;
         padding-right:$padding-left;
         color:white;
+        background:url(../img/piece3.png) no-repeat right bottom #464648 fixed;
+        background-size: 50%;
+        
 		h2
 		{
 			color:white;
@@ -185,9 +190,10 @@ img {
 			}
 		}
 	}
+}
 
 
-.toggle-container
+ .toggle-container
 {
 	position : fixed;
     height:$section-height;
@@ -197,15 +203,46 @@ img {
     transition:all 500ms ease-in-out;
     color:$secondary-color;
     width:100%;
-	padding : 2em $padding-left;
+	padding : 2em calc(100% / 12 * 2);
 	overflow-y : auto;
+    font-size:0.8em;
+    line-height:normal;
+    text-align: justify;
     
+.close-toggle::before {
+  content: url("../img/close.png");
+  left: -8px;
+  position: relative;
+  top: 3px;
+  width: 15px;
+}
+    .separation {
+  border-bottom: 1px solid $blue-catalcad;
+  box-sizing: content-box;
+  display: block;
+  margin: 10px 0 20px 0;
+}
+    h2 {
+    color:$blue-catalcad
+    }
     .more-container {
-		
+        
+		 h3 {
+  font-size: 1.5em;
+  text-align: left;
+         }
+.highlight {
+  background: none repeat scroll 0 0 $blue-catalcad;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  color: white;
+  margin: 20px 0 20px;
+  padding: 10px;
+}
 		.close-toggle
 		{
 			float : right;
 			clear : left;
+            font-size:0.8em;
 		}
 		
 		.more-content
@@ -216,7 +253,6 @@ img {
     
 	}
 }
-
 
 @media only screen and (max-width: 739px) {
 
@@ -362,6 +398,6 @@ img {
 			}
 		}
 	}
+}
+   
 
-}
-}
