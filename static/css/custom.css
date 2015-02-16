@@ -22,7 +22,7 @@ h1 {
 
 /*.scene{ @include animation(base 3s ease alternate infinite); }*/
 /* line 33, C:/xampp/htdocs/www/github/dev01/static/css/animation */
-.common_anim, .base, .front, .spot1, .spot2, .spot3 {
+.common_anim, .base, .front, .spot1, .spot2, .spot3, .arrow {
   position: absolute;
   transition: opacity 1s ease-in; }
 
@@ -93,21 +93,32 @@ h1 {
   left: 100px;
   min-height: 1px; }
 
-/* line 82, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+/* line 83, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+.arrow {
+  top: 60px;
+  left: 250px;
+  -webkit-animation: arrow 1s ease 1 both;
+  -ms-animation: arrow 1s ease 1 both;
+  animation: arrow 1s ease 1 both;
+  -webkit-animation-delay: 11s;
+  -ms-animation-delay: 11s;
+  animation-delay: 11s; }
+
+/* line 92, C:/xampp/htdocs/www/github/dev01/static/css/animation */
 .animation-spot3 {
   -webkit-animation: spot3-suite 1s 1 ease normal forwards;
   -ms-animation: spot3-suite 1s 1 ease normal forwards;
   animation: spot3-suite 1s 1 ease normal forwards; }
 
 @-webkit-keyframes base {
-  /* line 86, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 99, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   from {
     opacity: 0;
     -webkit-transform: scale(0.5);
     -ms-transform: scale(0.5);
     transform: scale(0.5); }
 
-  /* line 90, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 103, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   to {
     opacity: 1 !important;
     -webkit-transform: scale(1);
@@ -115,14 +126,14 @@ h1 {
     transform: scale(1); } }
 
 @keyframes base {
-  /* line 86, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 99, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   from {
     opacity: 0;
     -webkit-transform: scale(0.5);
     -ms-transform: scale(0.5);
     transform: scale(0.5); }
 
-  /* line 90, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 103, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   to {
     opacity: 1 !important;
     -webkit-transform: scale(1);
@@ -130,14 +141,14 @@ h1 {
     transform: scale(1); } }
 
 @-webkit-keyframes front {
-  /* line 97, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 110, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   from {
     opacity: 0;
     -webkit-transform: translate(0, -100px);
     -ms-transform: translate(0, -100px);
     transform: translate(0, -100px); }
 
-  /* line 101, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 114, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   to {
     opacity: 1 !important;
     -webkit-transform: translate(0, 0);
@@ -145,14 +156,14 @@ h1 {
     transform: translate(0, 0); } }
 
 @keyframes front {
-  /* line 97, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 110, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   from {
     opacity: 0;
     -webkit-transform: translate(0, -100px);
     -ms-transform: translate(0, -100px);
     transform: translate(0, -100px); }
 
-  /* line 101, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 114, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   to {
     opacity: 1 !important;
     -webkit-transform: translate(0, 0);
@@ -160,14 +171,14 @@ h1 {
     transform: translate(0, 0); } }
 
 @-webkit-keyframes spot1 {
-  /* line 108, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 121, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   from {
     opacity: 0;
     -webkit-transform: translate(0, 200px);
     -ms-transform: translate(0, 200px);
     transform: translate(0, 200px); }
 
-  /* line 112, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 125, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   to {
     opacity: 1 !important;
     -webkit-transform: translate(0, 0);
@@ -175,14 +186,14 @@ h1 {
     transform: translate(0, 0); } }
 
 @keyframes spot1 {
-  /* line 108, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 121, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   from {
     opacity: 0;
     -webkit-transform: translate(0, 200px);
     -ms-transform: translate(0, 200px);
     transform: translate(0, 200px); }
 
-  /* line 112, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 125, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   to {
     opacity: 1 !important;
     -webkit-transform: translate(0, 0);
@@ -190,14 +201,14 @@ h1 {
     transform: translate(0, 0); } }
 
 @-webkit-keyframes spot2 {
-  /* line 119, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 132, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   from {
     opacity: 0;
     -webkit-transform: translate(0, 200px);
     -ms-transform: translate(0, 200px);
     transform: translate(0, 200px); }
 
-  /* line 123, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 136, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   to {
     opacity: 1 !important;
     -webkit-transform: translate(0, 0);
@@ -205,14 +216,14 @@ h1 {
     transform: translate(0, 0); } }
 
 @keyframes spot2 {
-  /* line 119, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 132, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   from {
     opacity: 0;
     -webkit-transform: translate(0, 200px);
     -ms-transform: translate(0, 200px);
     transform: translate(0, 200px); }
 
-  /* line 123, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 136, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   to {
     opacity: 1 !important;
     -webkit-transform: translate(0, 0);
@@ -220,14 +231,14 @@ h1 {
     transform: translate(0, 0); } }
 
 @-webkit-keyframes spot3 {
-  /* line 130, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 143, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   from {
     opacity: 0;
     -webkit-transform: translate(0, -200px) scale(0.5);
     -ms-transform: translate(0, -200px) scale(0.5);
     transform: translate(0, -200px) scale(0.5); }
 
-  /* line 134, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 147, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   to {
     opacity: 1 !important;
     -webkit-transform: translate(0, 0) scale(0.5);
@@ -235,14 +246,14 @@ h1 {
     transform: translate(0, 0) scale(0.5); } }
 
 @keyframes spot3 {
-  /* line 130, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 143, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   from {
     opacity: 0;
     -webkit-transform: translate(0, -200px) scale(0.5);
     -ms-transform: translate(0, -200px) scale(0.5);
     transform: translate(0, -200px) scale(0.5); }
 
-  /* line 134, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 147, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   to {
     opacity: 1 !important;
     -webkit-transform: translate(0, 0) scale(0.5);
@@ -250,13 +261,13 @@ h1 {
     transform: translate(0, 0) scale(0.5); } }
 
 @-webkit-keyframes spot3-suite {
-  /* line 141, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 154, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   from {
     -webkit-transform: translate(0, 0) scale(0.5);
     -ms-transform: translate(0, 0) scale(0.5);
     transform: translate(0, 0) scale(0.5); }
 
-  /* line 144, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 157, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   to {
     opacity: 1 !important;
     -webkit-transform: translate(-250px, -350px) rotate(90deg) scale(0.8);
@@ -264,20 +275,20 @@ h1 {
     transform: translate(-250px, -350px) rotate(90deg) scale(0.8); } }
 
 @keyframes spot3-suite {
-  /* line 141, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 154, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   from {
     -webkit-transform: translate(0, 0) scale(0.5);
     -ms-transform: translate(0, 0) scale(0.5);
     transform: translate(0, 0) scale(0.5); }
 
-  /* line 144, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 157, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   to {
     opacity: 1 !important;
     -webkit-transform: translate(-250px, -350px) rotate(90deg) scale(0.8);
     -ms-transform: translate(-250px, -350px) rotate(90deg) scale(0.8);
     transform: translate(-250px, -350px) rotate(90deg) scale(0.8); } }
 
-/* line 151, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+/* line 164, C:/xampp/htdocs/www/github/dev01/static/css/animation */
 .pliage {
   left: 400px;
   position: absolute;
@@ -293,14 +304,14 @@ h1 {
   animation-delay: 11s; }
 
 @-webkit-keyframes pliage {
-  /* line 161, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 174, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   from {
     opacity: 0;
     -webkit-transform: scale(0.5) translate(0, -800px);
     -ms-transform: scale(0.5) translate(0, -800px);
     transform: scale(0.5) translate(0, -800px); }
 
-  /* line 165, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 178, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   to {
     opacity: 1;
     -webkit-transform: scale(0.8) translate(0, 0);
@@ -308,53 +319,77 @@ h1 {
     transform: scale(0.8) translate(0, 0); } }
 
 @keyframes pliage {
-  /* line 161, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 174, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   from {
     opacity: 0;
     -webkit-transform: scale(0.5) translate(0, -800px);
     -ms-transform: scale(0.5) translate(0, -800px);
     transform: scale(0.5) translate(0, -800px); }
 
-  /* line 165, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 178, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   to {
     opacity: 1;
     -webkit-transform: scale(0.8) translate(0, 0);
     -ms-transform: scale(0.8) translate(0, 0);
     transform: scale(0.8) translate(0, 0); } }
 
-/* line 172, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+@-webkit-keyframes arrow {
+  /* line 186, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  from {
+    opacity: 0; }
+
+  /* line 190, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  to {
+    opacity: 1 !important;
+    -webkit-transform: translate(80px, 0);
+    -ms-transform: translate(80px, 0);
+    transform: translate(80px, 0); } }
+
+@keyframes arrow {
+  /* line 186, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  from {
+    opacity: 0; }
+
+  /* line 190, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  to {
+    opacity: 1 !important;
+    -webkit-transform: translate(80px, 0);
+    -ms-transform: translate(80px, 0);
+    transform: translate(80px, 0); } }
+
+/* line 197, C:/xampp/htdocs/www/github/dev01/static/css/animation */
 .pliage.stay {
   -webkit-animation: stay1 4s ease infinite alternate backwards;
   -ms-animation: stay1 4s ease infinite alternate backwards;
   animation: stay1 4s ease infinite alternate backwards; }
 
 @-webkit-keyframes stay1 {
-  /* line 177, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 202, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   from {
     -webkit-transform: scale(0.8) translate(0, 0);
     -ms-transform: scale(0.8) translate(0, 0);
     transform: scale(0.8) translate(0, 0); }
 
-  /* line 180, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 205, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   to {
     -webkit-transform: scale(0.8) translate(0, -100px);
     -ms-transform: scale(0.8) translate(0, -100px);
     transform: scale(0.8) translate(0, -100px); } }
 
 @keyframes stay1 {
-  /* line 177, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 202, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   from {
     -webkit-transform: scale(0.8) translate(0, 0);
     -ms-transform: scale(0.8) translate(0, 0);
     transform: scale(0.8) translate(0, 0); }
 
-  /* line 180, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 205, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   to {
     -webkit-transform: scale(0.8) translate(0, -100px);
     -ms-transform: scale(0.8) translate(0, -100px);
     transform: scale(0.8) translate(0, -100px); } }
 
-/* line 186, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+/* line 210, C:/xampp/htdocs/www/github/dev01/static/css/animation */
 .spot3.stay {
   -webkit-animation: stay2 4s ease infinite alternate backwards;
   -ms-animation: stay2 4s ease infinite alternate backwards;
@@ -364,26 +399,26 @@ h1 {
   animation-delay: 4s; }
 
 @-webkit-keyframes stay2 {
-  /* line 192, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 216, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   from {
     -webkit-transform: translate(-250px, -350px) rotate(90deg) scale(0.8);
     -ms-transform: translate(-250px, -350px) rotate(90deg) scale(0.8);
     transform: translate(-250px, -350px) rotate(90deg) scale(0.8); }
 
-  /* line 195, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 219, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   to {
     -webkit-transform: translate(-250px, -350px) rotate(90deg) scale(0.8) translate(100px, 0);
     -ms-transform: translate(-250px, -350px) rotate(90deg) scale(0.8) translate(100px, 0);
     transform: translate(-250px, -350px) rotate(90deg) scale(0.8) translate(100px, 0); } }
 
 @keyframes stay2 {
-  /* line 192, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 216, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   from {
     -webkit-transform: translate(-250px, -350px) rotate(90deg) scale(0.8);
     -ms-transform: translate(-250px, -350px) rotate(90deg) scale(0.8);
     transform: translate(-250px, -350px) rotate(90deg) scale(0.8); }
 
-  /* line 195, C:/xampp/htdocs/www/github/dev01/static/css/animation */
+  /* line 219, C:/xampp/htdocs/www/github/dev01/static/css/animation */
   to {
     -webkit-transform: translate(-250px, -350px) rotate(90deg) scale(0.8) translate(100px, 0);
     -ms-transform: translate(-250px, -350px) rotate(90deg) scale(0.8) translate(100px, 0);

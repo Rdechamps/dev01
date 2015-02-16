@@ -13,6 +13,7 @@
                 <img class="spot1" id="spot1" src="static/img/animation/spot1.png" />
                 <img class="spot2" id="spot2" src="static/img/animation/spot2.png" />
                 <img class="spot3" id="spot3" src="static/img/animation/spot3.png" />
+               <img class="arrow" id="arrow" src="static/img/animation/arrow.png" />
                 
             </div>
         </div>
@@ -152,6 +153,7 @@ $('.base, .front, .spot1, .spot2').delay(8000).queue(function(){
  
         });
   
+
 
     
       $('.pliage').delay(13000).queue(function(){
