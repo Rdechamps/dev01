@@ -11,6 +11,16 @@
 	
 	$content['menu-item-5'] = "Contact us";
 	
+	$content['country-1'] = "FRANCE";
+	
+	$content['country-2'] = "GERMANY";
+	
+	$content['country-3'] = "ITALY";
+	
+	$content['country-4'] = "JAPAN";
+	
+	$content['country-5'] = "UNITED STATES";
+	
 	
 	$content['main-title'] = "La référence en CAO tôlerie";
 	$content['show-more'] = "Read more";

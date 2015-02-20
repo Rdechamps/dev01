@@ -77,9 +77,10 @@ img {
 
     .presentation, .product, .gallery, .business, .contact
 	{
-		min-height: $section-height;
+		/*min-height: $section-height;*/
 		height: auto;
 		overflow: hidden;
+		padding-bottom : 20px!important;
     }
         
 	.presentation
@@ -87,14 +88,17 @@ img {
 		padding:$padding-section;
 		overflow:hidden;
 		background-color:#f4f4f4;
-	
-			
+		
         .introduction {
             text-align: justify;
+			
+			.button
+			{
+				display : block;
+				width:inherit;
+				margin : 20px 0 0 0;	
+			}
         }
-        
-     
-  
 	}
 	.product
 	{
@@ -117,19 +121,37 @@ img {
 		background:url(../img/piece2.png) no-repeat right bottom #ececec fixed;
         .gallery-txt {
             padding-right:$padding-left;
+			padding-left : 0!important;
         }
 		.pictures-container
 		{
 			padding-left: $padding-left;
 			overflow:hidden;
-			
-			img, iframe
+			a
 			{
-				float : left;
-				clear : right;
-				width : 25%;
-				margin : 1%;
-				display : block;	
+				/*margin : 1.5%;*/
+				
+				img
+				{
+					float : left;
+					clear : right;
+					width : 100%;
+					margin : 2% 1%;
+					display : block;	
+				}
+			}
+		}
+		.videos-container
+		{
+			padding : 0;
+			.videos
+			{
+				display: block;
+				float: left;
+				clear: right;
+				width: 48%;
+				height: 160px;
+				margin: 2% 1% 0 0;
 			}
 		}
 	
@@ -143,15 +165,51 @@ img {
 		{
             padding-left:$padding-left;
             
-		.map iframe
+			#map
 			{
-                
-				width : 100%!important;
+				height:525px;
+				width:725px;
 			}
-			
+			.gm-style-iw *
+			{
+				display: block;
+				width: 100%;
+			}
+			.gm-style-iw h4, .gm-style-iw p
+			{
+				margin: 0;
+				padding: 0;
+			}
+			.gm-style-iw a
+			{
+				color: #4272db;
+			}
+		}
+		
+		.partners
+		{
+			ul
+			{
+				margin : 0;
+				padding : 0;
+				overflow: hidden;
+				li
+				{
+					list-style:none;
+					float : left;
+					clear : right;
+					width : 30%;
+					margin : 1.5%;
+					img
+					{
+						width : 100%;
+						height : auto;
+					}
+				}
+			}
 		}
 	
-		}
+	}
 	
 	.contact
 	{
@@ -250,8 +308,152 @@ img {
 			padding : 30px 0 0 0;
 		}
 		
-    
+   
 	}
+}
+
+@media only screen and (max-width: 1024px) {
+	
+	.header
+	{
+		background : #FFF;
+		padding : 0;
+		
+		ul
+		{
+			li
+			{
+				a
+				{
+					font-size : 0.95em;	
+				}
+			}
+			div
+			{
+				width: 10%;
+				position: absolute;
+				top: 5px;
+				left: initial;
+				right: -10%;
+				
+				a
+				{
+					display : block;	
+				}
+			}
+		}
+			
+	}
+	.logo
+    {
+		position: fixed;
+		top: 20px;
+		z-index : 100;
+
+		img
+		{
+      		max-width: 90px;
+     		width: 100%;
+    		transition: all 300ms ease-in-out;
+    	}
+		.scrolled
+		{
+			 max-width: 80px;
+			 margin: -13px 0 0;
+		}
+	}
+	
+	.main-container
+	{
+		h1
+		{
+			font-size : 1.8em;	
+		}
+		.sec-container
+		{
+			font-size : 0.85em;
+			line-height:18px;
+		}
+		.gallery
+		{
+			.pictures-container
+			{
+				padding-left: $padding-left;
+				overflow:hidden;
+				
+				img
+				{
+					float : left;
+					clear : right;
+					width : 30%;
+					margin : 2% 1%;
+					display : block;
+				}
+			}
+			.gallery-txt
+			{
+				h1, p
+				{
+					margin : 0 0 15px 0;	
+				}
+				.videos-container
+				{
+					padding : 0;
+					.videos
+					{
+						display: block;
+						float: left;
+						clear: right;
+						width: 96%;
+						height: 180px;
+						margin: 2% 2% 0 0;
+					}
+				}
+			}
+		}
+		.business
+		{
+			padding : 30px 0 0 0;
+			.sellers
+			{
+				margin-top : 0;
+				#map
+				{
+					height:400px!important;
+					width:100%!important;
+				}	
+			}
+		}
+		.references
+		{
+			margin : 25px 0 0 0!important;
+			.partners
+			{
+				ul
+				{
+					display : block;
+					margin : -20px 0 10px 0;
+					padding : 0;
+					overflow: hidden;
+					li
+					{
+						list-style:none;
+						float : left;
+						clear : right;
+						width : 16.5%!important;
+						margin : 0!important;
+						img
+						{
+							width : 80%;
+							height : auto;
+						}
+					}
+				}
+			}
+		}
+		
+	}
+	
 }
 
 @media only screen and (max-width: 739px) {
@@ -352,7 +554,35 @@ img {
 		}
 		.references
 		{
-			padding : 0 0 0 10px;
+			padding : 10px 0 0 0!important;
+			h1
+			{
+				padding-left : 25px;	
+			}
+			.partners
+			{
+				ul
+				{
+					width:90%;
+					display : block;
+					margin : auto;
+					margin-top : -20px;
+					padding : 0;
+					li
+					{
+						list-style:none;
+						float : left;
+						clear : right;
+						width : 30%!important;
+						margin : 1.5%!important;
+						img
+						{
+							width : 100%;
+							height : auto;
+						}
+					}
+				}
+			}
 		}
 		.contact
 		{

@@ -1612,7 +1612,7 @@ table caption {
 
 }
 
-@media only screen and (min-width: 740px) and (max-width: 959px) {
+@media only screen and (min-width: 740px) and (max-width: 1024px) {
 
   .container,
 
@@ -2307,6 +2307,12 @@ table caption {
     width: -moz-calc(100% / 12 * 11);
 	
 	margin : 0 4%;
+
+  }
+  
+  .mobile-col-12 {
+
+    width: 100%;
 
   }
 

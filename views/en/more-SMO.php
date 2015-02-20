@@ -3,9 +3,6 @@
 ?>
 
 <div class="more-container">
-
-	<a class="close-toggle" href="#" onClick="$('.toggle-container').css('left','100%;');$('html, body').css('overflow-y','auto');">FERMER</a>
-
     <h2><?php echo $content['more-SMO-title']; ?></h2>
     <div class="col col-3 mobile-full">
     	<h3><?php echo $content['more-SMO-subtitle-1']; ?></h3>

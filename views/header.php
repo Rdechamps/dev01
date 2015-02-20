@@ -12,7 +12,12 @@
 
 <link rel="stylesheet" href="static/css/custom.css">
 
+<link rel="stylesheet" href="static/css/lightbox.css">
+
+<link rel="stylesheet" href="static/css/slick.css">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 </head>
 
@@ -22,7 +27,7 @@
 
 <div class="header col col-12 mobile-full">
 	<div  class="toggle-menu"><a href="#"><img width="40" height="40" src="static/img/burger.jpg"></a></div>
-    <ul class="menu-list col col-7 push-5 ">
+    <ul class="menu-list col col-7 push-5 tablet-col-9 tablet-push-2">
 
         <li><a id="presentation" href="#" class="active"><?php echo $content['menu-item-1']; ?></a></li>
 
@@ -34,7 +39,7 @@
 
         <li><a id="contact" href="#"><?php echo $content['menu-item-5']; ?></a></li>
         
-         <div class="col col-1 push-4">
+         <div class="col col-1 push-4 show-tablet">
     
             <a href="index.php?action=fr"><img title="French" alt="French" height="25" width="25" src="static/img/icons/France.png"></a>
             
@@ -43,11 +48,9 @@
     	</div>
 
     </ul>
-    <div class="change-lang col col-1 push-4 no-mobile">
+    <div class="change-lang col col-1 push-4 no-mobile no-tablet">
     
-    	<a href="index.php?action=fr"><img title="French" alt="French" height="25" width="25" src="static/img/icons/France.png"></a>
-        
-    	<a href="index.php?action=en"><img title="English" alt="English" height="25" width="25" src="static/img/icons/UK.png"></a>
+    	<a href="index.php?action=fr">FR</a>/<a href="index.php?action=en">EN</a>
         
     </div>
 </div>
